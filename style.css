@@ -84,8 +84,8 @@ h1.site-title span {
 
 .colors {
   display: flex;
-  justify-content: space-around;
 }
+
 .color {
   width: 25%;
   text-align: center;
@@ -93,6 +93,7 @@ h1.site-title span {
 
 .product {
   display: flex;
+  justify-content: space-between;
 }
 
 .button {
@@ -103,4 +104,11 @@ h1.site-title span {
   width: 150px;
   height: 40px;
   font-size: 1rem;
+  margin-top: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+.product__image {
+  margin-right: 40px;
 }
