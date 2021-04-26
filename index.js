@@ -9,16 +9,14 @@
         style="fill: #a6a6a6" */
 
 const shirtElm = document.querySelector('#product-image');
+// const btnElm = document.querySelector('.button');
 
-const btnElm = document.querySelector('.button');
-btnElm.addEventListener('click', (event) => {
-  if (event.target === '<button class="circle white"></button>') {
-    shirtElm.style = 'fill: #ffffff';
-  } else if (event.target === '<button class="circle black"></button>') {
-    shirtElm.style = 'fill: #000000';
-  } else if (event.target === '<button class="circle red"></button>') {
-    shirtElm.style = 'fill: #7a0adb';
-  } else if (event.target === '<button class="circle blue"></button>') {
-    shirtElm.style = 'fill: #7bd3ee';
-  }
-});
+const whiteElm = document.querySelector('.white');
+const blackElm = document.querySelector('.black');
+const redElm = document.querySelector('.red');
+const blueElm = document.querySelector('.blue');
+
+whiteElm.addEventListener('click', () => (shirtElm.style = 'fill: #ffffff'));
+blackElm.addEventListener('click', () => (shirtElm.style = 'fill: #000000'));
+redElm.addEventListener('click', () => (shirtElm.style = 'fill: #7a0a0a'));
+blueElm.addEventListener('click', () => (shirtElm.style = 'fill: #7bd3ee'));
