@@ -20,3 +20,27 @@ whiteElm.addEventListener('click', () => (shirtElm.style = 'fill: #ffffff'));
 blackElm.addEventListener('click', () => (shirtElm.style = 'fill: #000000'));
 redElm.addEventListener('click', () => (shirtElm.style = 'fill: #7a0a0a'));
 blueElm.addEventListener('click', () => (shirtElm.style = 'fill: #7bd3ee'));
+
+// -----POKUS O KOMPONENTU-----
+// Struktura:
+//  <div class="color">
+//             <div class="color-box">
+//               <button class="circle black"></button>
+//             </div>
+//             <p class="color__name">černá</p>
+//           </div>
+
+// const Shirt = (props) => {
+//   const element = document.createElement('div');
+//   element.classList.add('color');
+//   element.innerHTML = `
+//         <div class="color-box">
+//                 <button class="circle ${props.color}"></button>
+//         </div>
+//         <p class="color__name">${props.name}</p>
+//   `;
+//   ???Elm.addEventListener('click', () => (shirtElm.style = `${colorHexadecimal}`));
+// return element
+// };
+
+// element.appendChild();
